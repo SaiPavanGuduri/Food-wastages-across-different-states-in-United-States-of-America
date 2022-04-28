@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Web Assignment 4/obj
+/Web Assignment 4/bin/Debug/net5.0

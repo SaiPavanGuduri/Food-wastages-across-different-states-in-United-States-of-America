@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "ChartJs";
+}
+
+<h1>ChartJs</h1>
+
+<canvas id="myChart"></canvas>
+
+
+
+
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        fetch("@Url.Action("GetChartData", "Home")?state=@Context.Request.Query["q"]"  ,
+                {
+                    headers: { "Content-Type": "application/json" },
+                })
+            .then(response => {
+                if (!response.ok) {
+                    throw response;
+                }
+                return response.json();
+            })
+            .then(json => {
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: json.labels,
+                        datasets: [{
+                            label: '# of Votes',
+                            data: json.data,
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive:true,
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+
+            })
+            .catch(response => console.log(response));
+
+
+
+
+
+
+      
+
+
+
+    </script>
+
+}

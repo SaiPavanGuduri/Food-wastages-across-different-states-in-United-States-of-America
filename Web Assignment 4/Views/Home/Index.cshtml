@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center my-4">
+    <h2>
+        Top 3 Food Recall Enforcement
+    </h2>
+    <p>
+        Welcome to the Food Recall Enforcement tracking
+        for the top 3 affected states in the United States with their Counties.
+    </p>
+</div>
+
+<div class="row home">
+    <div class="col-sm">
+        <div class="card border-0">
+            <a asp-action="List" asp-route-q="CA">
+                <img src="https://thumb.mp-farm.com/98029203/preview.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="List" asp-route-q="CA">
+                    <h5 class="card-title">Food Enforcement in California</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card border-0">
+            <a asp-action="List" asp-route-q="TX">
+                <img src="https://www.freeworldmaps.net/united-states/texas/texas-map.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="List" asp-route-q="TX">
+                    <h5 class="card-title">Food Enforcement in Texas</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card border-0">
+            <a asp-action="List" asp-route-q="NY">
+                <img src="https://i.pinimg.com/736x/7e/d2/32/7ed23271b4d1b145a87fbb1610eaae93--road-maps-the-state.jpg" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="List" asp-route-q="NY">
+                    <h5 class="card-title">Food Enforcement in New York</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <p>
+        For more information about all the states in United States America Food Recall Enforcement info by counties navigate to
+    </p>
+    <a href="https://open.fda.gov/apis/food/enforcement/" target="_blank">
+        USA Countries Food Recall Enforcement info
+    </a>
+</div>
+
+

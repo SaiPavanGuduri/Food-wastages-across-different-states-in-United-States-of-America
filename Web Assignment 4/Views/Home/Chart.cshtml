@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Chart";
+}
+
+<div class="text-center my-4">
+    <h2>
+        Chart for Top 3 Food Recall Enforcement
+    </h2>
+    <p>
+        Welcome to the Food Recall Enforcement tracking
+        for the top 3 affected states in the United States with their Counties.
+    </p>
+</div>
+<div class="row">
+    <div class="col-sm">
+        <div class="card">
+            <a asp-action="ChartJs" asp-route-q="CA">
+                <img src="/img/chart1.png" class="card-img-bottom" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="ChartJs" asp-route-q="CA">
+                    <h5 class="card-title">Chart in California</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <a asp-action="ChartJs" asp-route-q="TX">
+                <img src="/img/chart2.png" class="card-img-bottom" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="ChartJs" asp-route-q="TX">
+                    <h5 class="card-title">Chart in Texas</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <a asp-action="ChartJs" asp-route-q="NY">
+                <img src="/img/chart3.png" class="card-img-bottom" alt="...">
+            </a>
+            <div class="card-body">
+                <a asp-action="ChartJs" asp-route-q="NY">
+                    <h5 class="card-title">Chart in New York</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <p>
+        For more information about all the states in United States America Food Recall Enforcement info by counties navigate to
+    </p>
+    <a href="https://open.fda.gov/apis/food/enforcement/" target="_blank">
+        USA Countries Food Recall Enforcement info
+    </a>
+</div>
+
+
+
+
+
+
+
