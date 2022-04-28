@@ -14,5 +14,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Web_Assignment_4.Models.Assignment4Context</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>WebAssignmentCloudDeploy - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
