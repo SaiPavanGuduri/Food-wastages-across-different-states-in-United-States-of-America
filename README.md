@@ -1,4 +1,4 @@
-#Food wastages across different states in United States of America
+**Food wastages across different states in United States of America**
 <br></br>
 Softwares and Tools used: C#, .Net, Javascript, HTML5, CSS3, Entitiy Frameworks, Visual Studio
 <br></br>
